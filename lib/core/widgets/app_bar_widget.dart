@@ -16,7 +16,7 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
     Key? key,
     required this.title,
     this.backgroundColor = kAppbarColor,
-    this.textStyle = const TextStyle(color: kWhiteColor),
+    this.textStyle = const TextStyle(color: kDarkBlueColor),
     this.elevation = 0,
     this.centerTitle = true,
     this.automaticallyImplyLeading = true,

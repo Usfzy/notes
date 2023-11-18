@@ -11,9 +11,9 @@ class SplashPage extends StatelessWidget {
       body: Center(
         child: InkWell(
             onTap: () {
-              context.pushNamed(RouteGenerator.kHomeScreen);
+              context.pushNamed(RouteGenerator.kHomePage);
             },
-            child: Text('context.localizations.appTitle')),
+            child: const Text('Notes')),
       ),
     );
   }

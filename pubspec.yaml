@@ -12,11 +12,6 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.2
 
-  # Flutter Localization is a package use for in-app localization with map data. More easier and faster to implement and inspired by the flutter_localizations itself.
-  flutter_localizations:
-    sdk: flutter
-  # Add the intl package
-  intl: ^0.18.0
   # A simple way to access state from anywhere in your application while robust and testable.
   flutter_riverpod: ^2.3.6
   # Chopper is a http client generator using source_gen, inspired by Retrofit
@@ -68,12 +63,11 @@ flutter_native_splash:
   web: false
 # Change app name
 flutter_app_name:
-  name: "My Cool App"
+  name: "Notes"
 ####################################### REMOVE #############################################
 
 
 flutter:
-  generate: true
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:

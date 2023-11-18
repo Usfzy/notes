@@ -1,4 +1,4 @@
-package com.skeleton.skeleton_app
+package com.usfzy
 
 import io.flutter.embedding.android.FlutterActivity
 

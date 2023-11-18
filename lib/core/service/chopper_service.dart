@@ -22,6 +22,7 @@ List<ChopperService> get services => [
 
 Map<Type, Function> get typeToJsonFactoryMap => {
 // AuthSuccess: (json) => AuthSuccess.fromJson(json),
+// Note: (json) => Note.fromJson(json),
     };
 
 class TokenAuthenticator extends Authenticator {
@@ -72,7 +73,6 @@ class JsonToTypeConverter extends JsonConverter {
   T fromJsonData<T, InnerType>(String jsonData, Function? jsonParser) {
     var jsonMap = json.decode(jsonData);
     if (jsonParser == null) {
-      print("jsonMap : ${jsonMap}");
       return jsonMap as T;
     }
     if (jsonMap is List) {
