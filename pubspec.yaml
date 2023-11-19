@@ -38,6 +38,8 @@ dev_dependencies:
   chopper_generator: ^6.0.1
   # Code generation for immutable classes that has a simple syntax/API without compromising on the features.
   freezed: ^2.3.4
+  # generate code for riverpod
+  riverpod_generator: ^2.3.6
 
   ####################################### REMOVE #############################################
   # fvm flutter pub run flutter_native_splash:create

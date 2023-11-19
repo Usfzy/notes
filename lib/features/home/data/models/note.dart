@@ -4,7 +4,7 @@ class Note {
   final String note;
   final String date;
 
-  const Note({
+   Note({
     required this.id,
     required this.title,
     required this.note,
