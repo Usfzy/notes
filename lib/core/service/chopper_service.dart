@@ -22,7 +22,7 @@ List<ChopperService> get services => [
 
 Map<Type, Function> get typeToJsonFactoryMap => {
 // AuthSuccess: (json) => AuthSuccess.fromJson(json),
-// Note: (json) => Note.fromJson(json),
+// Product: (json) => Product.fromJson(json),
     };
 
 class TokenAuthenticator extends Authenticator {

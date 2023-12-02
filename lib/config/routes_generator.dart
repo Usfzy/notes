@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:skeleton_app/features/home/views/pages/home_page.dart';
+import 'package:skeleton_app/features/home/views/pages/cart_page.dart';
+import 'package:skeleton_app/features/home/views/pages/products_page.dart';
+import 'package:skeleton_app/features/home/views/pages/orders_page.dart';
 import 'package:skeleton_app/features/splash/splash_page.dart';
 
 class RouteGenerator {
@@ -7,9 +9,11 @@ class RouteGenerator {
 
   static const kTitle = 'Skeleton App';
 
-  static const kSplashPage = 'splash_screen';
-  static const kLoginPage = 'login_screen';
-  static const kHomePage = 'home_screen';
+  static const kSplashPage = 'splash_page';
+  static const kLoginPage = 'login_page';
+  static const kProductsPage = 'products_page';
+  static const kOrdersPage = 'orders_page';
+  static const kCartPage = 'cart_page';
 
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {
     switch (settings.name) {
@@ -17,9 +21,17 @@ class RouteGenerator {
         return MaterialPageRoute(
           builder: (context) => const SplashPage(),
         );
-      case kHomePage:
+      case kProductsPage:
         return MaterialPageRoute(
-          builder: (context) => const HomePage(),
+          builder: (context) => const ProductsPage(),
+        );
+      case kCartPage:
+        return MaterialPageRoute(
+          builder: (context) => const CartPage(),
+        );
+      case kOrdersPage:
+        return MaterialPageRoute(
+          builder: (context) => const OrdersPage(),
         );
 
       default:
